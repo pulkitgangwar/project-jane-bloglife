@@ -1,0 +1,130 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.flex-container {
+  &__logosec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      align-items: stretch;
+    }
+  }
+
+  &__normal-use {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main {
+    display: flex;
+    padding: 1.5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+}
+
+.heading-primary-1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem 0;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+}
+
+.heading-secondary {
+  color: $color-white;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  padding: 1rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+}
+
+.normal-paragraph {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-transform: capitalize;
+  line-height: 1.5;
+
+  &--white {
+    color: $color-white !important;
+  }
+}
+
+.paragraph-primary {
+  font-family: oswald;
+  font-size: 2rem;
+  line-height: 2;
+
+  &__main {
+    text-transform: capitalize;
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+
+  &__sub {
+    text-transform: capitalize;
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+
+  &--color-grey {
+    color: $color-grey;
+  }
+
+  &__sub--mark {
+    background-color: $color-black;
+    color: $color-white;
+    text-transform: capitalize;
+    padding: 0.5rem;
+  }
+}
+
+.heading-fourth {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &--white {
+    color: $color-white !important;
+  }
+}
+
+.normal-paragraph-1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  &__main {
+    font-size: 2rem;
+    padding: 0.3rem 0;
+  }
+}

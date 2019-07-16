@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  background-color: $color-black-1;
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  &__icons-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    color: $color-white;
+    padding: 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-grey;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}

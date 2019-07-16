@@ -1,0 +1,69 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1rem 3rem;
+
+    text-decoration: none;
+    font-family: oswald;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &--before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    font-family: "Font Awesome 5 Solid";
+  }
+
+  &--color-black {
+    color: $color-black;
+  }
+
+  &--color-white {
+    color: $color-white;
+  }
+
+  &--white {
+    border: 1px solid $color-grey;
+
+    &:hover {
+      background-color: rgba($color-grey, 0.8);
+    }
+  }
+
+  &--orange {
+    background-color: $color-orange;
+    width: 100%;
+    text-align: center;
+    font-family: verdana, sans-serif !important;
+    font-size: 1.5rem;
+
+    &:hover {
+      background-color: rgba($color-grey, 0.6);
+    }
+  }
+
+  &--grey {
+    background-color: $background-color;
+
+    &:hover {
+      background-color: rgba($color-white, 0.6);
+    }
+  }
+
+  &--black {
+    background-color: $color-black;
+
+    &:hover {
+      background-color: rgba($color-grey, 0.5);
+      transition: all 0.4s;
+    }
+  }
+
+  &--mark-ori {
+    padding: 0.5rem;
+    background-color: $color-white;
+  }
+}
